@@ -102,4 +102,7 @@
         width: 10%;
         height: 10%;
     }
+    .aboutUs .head {
+        padding: 50px;
+    }
 }
