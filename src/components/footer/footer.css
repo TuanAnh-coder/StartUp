@@ -1,0 +1,146 @@
+.footer {
+    position: relative;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .container .footer__logo {
+    width: 30%;
+}
+
+.footer .container .footer__logo a {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.footer .container .footer__logo img {
+    width: 40%;
+}
+
+.footer .container .footer__logo a span {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.footer .container .footer__logo .icon {
+    display: flex;
+}
+
+.footer .container .footer__logo .icon li {
+    padding: 15px;
+    font-size: 25px;
+    color: gray;
+    padding-left: 0;
+}
+
+.footer .container .footer__logo .icon li:hover {
+    color: blue;
+}
+
+.footer .container .footer__logo .footer__content {
+    color: #767474;
+    font-size: 18px;
+}
+
+
+.footer .container .title {
+    padding-bottom: 25px;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.footer .container .link__item {
+    padding: 7px 0;
+    color: #767474;
+    font-size: 18px;
+}
+
+.footer .container .link__item:hover {
+    color: blue;
+}
+
+.footer .right {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    transform: rotate(180deg);
+}
+
+@media (max-width: 992px) {
+    .footer {
+        width: 80%;
+        margin: auto;
+    }
+
+    .footer .right {
+        top: 0;
+        right: -100px;
+    }
+
+    .footer .left {
+        position: absolute;
+        left: -90px;
+    }
+
+    .footer .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .footer .container .footer__logo,
+    .useFul,
+    .terms,
+    .support__help {
+        width: 40%;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer .container .footer__logo {
+        width: 70%;
+    }
+
+    .footer .container .title {
+        font-size: 1.3rem;
+    }
+
+    .footer .container .footer__logo .footer__content {
+        font-size: 16px;
+    }
+
+    .footer .container .link__item {
+        font-size: 16px;
+    }
+
+    .footer .container .footer__logo .icon li {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .footer .container .footer__logo,
+    .useFul,
+    .terms,
+    .support__help {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer .container .title {
+        font-size: 1rem;
+    }
+
+    .footer .container .footer__logo .footer__content {
+        font-size: 14px;
+    }
+    .footer .container .footer__logo .icon li {
+        font-size: 16px;
+    }
+}

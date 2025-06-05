@@ -1,0 +1,105 @@
+.aboutUs {
+    background-color: #F0F2F9;
+    padding-bottom: 100px;
+}
+
+.aboutUs .head {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 100px;
+}
+
+.aboutUs .head .title {
+    font-weight: 700;
+    font-size: 2.4rem;
+    padding-bottom: 30px;
+}
+
+.aboutUs .head .description {
+    font-size: 20px;
+    color: rgb(118, 116, 116);
+}
+
+.rate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rate .rate__item {
+    background-color: #FFF;
+    padding: 30px;
+    padding-bottom: 0;
+    text-align: start;
+    width: 27%;
+    margin: 0 10px;
+}
+
+.rate .rate__item p {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e2e1e1ee;
+}
+
+.rate .rate__item .user {
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.rate .rate__item .user .user__information .name__user {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.rate .rate__item .user img {
+    padding-right: 10px;
+    width: 15%;
+    height: 15%;
+}
+
+@media (max-width: 992px) {
+    .aboutUs .head {
+        width: 55%;
+        padding: 70px;
+    }
+
+    .rate {
+        width: 80%;
+        align-items: stretch;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+    .rate .rate__item {
+        width: 35%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutUs .head {
+        width: 70%;
+    }
+
+    .aboutUs .head .title {
+        font-size: 1.3rem;
+    }
+
+    .aboutUs .head .description {
+        font-size: 14px;
+    }
+
+    .rate {
+        flex-direction: column;
+    }
+
+    .rate .rate__item {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .rate .rate__item .user img {
+        width: 10%;
+        height: 10%;
+    }
+}

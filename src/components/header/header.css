@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:active,
+a:visited,
+a:link {
+    text-decoration: none;
+    color: #000;
+}
+
+ul li {
+    list-style: none;
+}
+
+header {
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+}
+
+header .container .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.fixed {
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.header__logo {
+    width: 15%;
+    min-width: 150px;
+}
+
+.header__logo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.header__logo img {
+    width: 45%;
+}
+
+.header__menu {
+    width: 45%;
+}
+
+.header__menu ul {
+    border-bottom: 0px;
+    font-size: 1rem;
+    background-color: transparent;
+}
+
+.header__user {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header__user a {
+    width: 40%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header__user a:nth-child(2) {
+    background-color: #5575F8;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.toolbar {
+    display: none;
+}
+/* From Uiverse.io by vinodjangid07 */ 
+#checkbox {
+  display: none;
+}
+
+.toggle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition-duration: .5s;
+}
+
+.bars {
+  width: 100%;
+  height: 4px;
+  background-color: rgb(176, 92, 255);
+  border-radius: 4px;
+}
+
+#bar2 {
+  transition-duration: .8s;
+}
+
+#bar1,#bar3 {
+  width: 70%;
+}
+
+#checkbox:checked + .toggle .bars {
+  position: absolute;
+  transition-duration: .5s;
+}
+
+#checkbox:checked + .toggle #bar2 {
+  transform: scaleX(0);
+  transition-duration: .5s;
+}
+
+#checkbox:checked + .toggle #bar1 {
+  width: 100%;
+  transform: rotate(45deg);
+  transition-duration: .5s;
+}
+
+#checkbox:checked + .toggle #bar3 {
+  width: 100%;
+  transform: rotate(-45deg);
+  transition-duration: .5s;
+}
+
+#checkbox:checked + .toggle {
+  transition-duration: .5s;
+  transform: rotate(180deg);
+}
+
+@media (max-width: 992px) {
+    header .container .header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .header__user {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .toolbar {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__user {
+        justify-content: end;
+    }
+
+    .header__user>a {
+        display: none;
+    }
+}
