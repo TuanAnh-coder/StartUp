@@ -87,10 +87,10 @@ const AboutUs = () => {
                     <h1 className="title">What Our Users Says</h1>
                     <p className="description">There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form.</p>
                 </div>
-                <Carousel autoplay effect="scrollx" draggable>
+                <Carousel effect="scrollx" draggable>
                     {groupRate.map((idx, id) => (
                         <div key={id}>
-                            <div style={contentStyle} key={id}>
+                            <div key={id}>
                                 <div className="rate">
                                     {idx.map(index => (
                                         <div className="rate__item" key={index.id}>

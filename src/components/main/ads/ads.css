@@ -79,6 +79,7 @@
 
     .ads__description__bot {
         flex-direction: column-reverse;
+        align-items: start;
     }
 
     .ads__description__bot .ads__content .content__item {

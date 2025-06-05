@@ -65,11 +65,11 @@
     }
 
     .rate {
-        width: 80%;
         align-items: stretch;
         margin: auto;
         flex-wrap: wrap;
     }
+
     .rate .rate__item {
         width: 35%;
         margin-bottom: 30px;
@@ -90,19 +90,17 @@
     }
 
     .rate {
-        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
+@media (max-width: 576px) {
+    .rate {
+        justify-content: center;
     }
 
     .rate .rate__item {
-        width: 80%;
-        margin-bottom: 10px;
-    }
-
-    .rate .rate__item .user img {
-        width: 10%;
-        height: 10%;
-    }
-    .aboutUs .head {
-        padding: 50px;
+        width: 70%;
     }
 }
