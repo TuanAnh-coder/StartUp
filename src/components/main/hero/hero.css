@@ -94,4 +94,8 @@
         font-size: 14px;
         font-weight: 500;
     }
+    .background--top--right,  .background--bottom--left{
+        width: 100%;
+        overflow: hidden;
+    }
 }

@@ -103,4 +103,8 @@
     .rate .rate__item {
         width: 70%;
     }
+
+    .aboutUs .head {
+        padding: 44px;
+    }
 }
