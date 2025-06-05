@@ -107,6 +107,10 @@
         font-size: 14px;
     }
 
+    .ads__description__bot {
+        align-items: start;
+    }
+
     .ads__description .content__features {
         grid-template-columns: 100%;
         row-gap: 20px;
@@ -119,5 +123,8 @@
 
     .ads__description__bot .ads__content .content__item p {
         font-size: 14px;
+    }
+    .ads__description__bot .ads__img img{
+        width: 100%;
     }
 }
